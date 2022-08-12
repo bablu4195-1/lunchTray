@@ -57,10 +57,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
-                    android:tag="binding_1"                                  
-                                                                                                         
+                    android:tag="binding_1"                                                              
+                                                                             
                                                                                 
-                    android:checkedButton='true'
                     tools:text="Entree 1" />
 
                 <TextView
@@ -90,8 +89,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
-                    android:tag="binding_4"                            
-                                                                                                   
+                    android:tag="binding_4"                                                        
+                                                                       
                                                                          
                     tools:text="Entree 2" />
 
@@ -122,8 +121,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
-                    android:tag="binding_7"                            
-                                                                                                   
+                    android:tag="binding_7"                                                        
+                                                                       
                                                                          
                     tools:text="Entree 3" />
 

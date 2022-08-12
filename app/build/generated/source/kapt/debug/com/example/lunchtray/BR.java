@@ -7,7 +7,9 @@ public class BR {
 
   public static final int checkOutFragment = 2;
 
-  public static final int sideMenuFragment = 3;
+  public static final int entreeMenuFragment = 3;
 
-  public static final int viewModel = 4;
+  public static final int sideMenuFragment = 4;
+
+  public static final int viewModel = 5;
 }

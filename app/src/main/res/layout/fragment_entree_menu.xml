@@ -57,7 +57,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
-                    android:checked='@{viewModel.entree.equals(viewModel.menuItems["cauliflower"].name)}'
                     android:text='@{viewModel.menuItems["cauliflower"].name}'
                     android:onClick ='@{()->viewModel.setEntree("cauliflower")}'
                     tools:text="Entree 1" />
@@ -89,9 +88,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
-                    android:checked='@{viewModel.entree.equals(viewModel.menuItems["chili"].name)}'
-                    android:text='@{viewModel.menuItems["chili"].name}'
                     android:onClick='@{()->viewModel.setEntree("chili")}'
+                    android:text='@{viewModel.menuItems["chili"].name}'
                     tools:text="Entree 2" />
 
                 <TextView
@@ -121,7 +119,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
-                    android:checked='@{viewModel.entree.equals(viewModel.menuItems["pasta"].name)}'
                     android:text='@{viewModel.menuItems["pasta"].name}'
                     android:onClick='@{()->viewModel.setEntree("pasta")}'
                     tools:text="Entree 3" />
@@ -154,7 +151,6 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:text='@{viewModel.menuItems["skillet"].name}'
-                    android:checked='@{viewModel.entree.equals(viewModel.menuItems["skillet"].name)}'
                     android:onClick='@{()->viewModel.setEntree("skillet")}'
                     tools:text="Entree 4" />
 

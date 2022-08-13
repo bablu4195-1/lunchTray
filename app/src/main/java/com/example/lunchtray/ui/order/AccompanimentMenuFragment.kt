@@ -63,6 +63,7 @@ class AccompanimentMenuFragment : Fragment() {
             // TODO: initialize the AccompanimentMenuFragment variables
             accompanimentMenuFragment = this@AccompanimentMenuFragment
             nextButton.setOnClickListener { goToNextScreen() }
+            cancelButton.setOnClickListener { cancelOrder() }
         }
     }
 
@@ -80,6 +81,8 @@ class AccompanimentMenuFragment : Fragment() {
     fun cancelOrder() {
         // TODO: Reset order in view model
         // TODO: Navigate back to the [StartFragment] to start over
+        sharedViewModel.resetOrder()
+        findNavController().navigate(R.id.action_accompanimentMenuFragment_to_startOrderFragment3)
     }
 
     /**

@@ -61,6 +61,7 @@ class EntreeMenuFragment : Fragment() {
             // TODO: initialize the EntreeMenuFragment variables
             entreeMenuFragment = this@EntreeMenuFragment
             nextButton.setOnClickListener{goToNextScreen()}
+            cancelButton.setOnClickListener { cancelOrder() }
         }
     }
 
@@ -78,6 +79,8 @@ class EntreeMenuFragment : Fragment() {
     fun cancelOrder() {
         // TODO: Reset order in view model
         // TODO: Navigate back to the [StartFragment] to start over
+         sharedViewModel.resetOrder()
+        findNavController().navigate(R.id.action_entreeMenuFragment_to_startOrderFragment3)
     }
 
     /**

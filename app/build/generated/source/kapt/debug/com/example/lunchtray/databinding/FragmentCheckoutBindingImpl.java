@@ -189,7 +189,10 @@ public class FragmentCheckoutBindingImpl extends FragmentCheckoutBinding  {
         }
         androidx.lifecycle.LiveData<com.example.lunchtray.model.MenuItem> viewModelAccompaniment = null;
         androidx.lifecycle.LiveData<java.lang.String> viewModelSubtotal = null;
+        java.lang.String totalAndroidStringTotalViewModelTotal = null;
         java.lang.String viewModelEntreeFormattedPrice = null;
+        java.lang.String taxAndroidStringTaxViewModelTax = null;
+        java.lang.String subtotalAndroidStringSubtotalViewModelSubtotal = null;
         java.lang.String viewModelTaxGetValue = null;
         com.example.lunchtray.model.MenuItem viewModelEntreeGetValue = null;
         com.example.lunchtray.model.MenuItem viewModelSideGetValue = null;
@@ -245,6 +248,10 @@ public class FragmentCheckoutBindingImpl extends FragmentCheckoutBinding  {
                         // read viewModel.subtotal.getValue()
                         viewModelSubtotalGetValue = viewModelSubtotal.getValue();
                     }
+
+
+                    // read @android:string/subtotal
+                    subtotalAndroidStringSubtotalViewModelSubtotal = subtotal.getResources().getString(R.string.subtotal, viewModelSubtotalGetValue);
             }
             if ((dirtyFlags & 0x184L) != 0) {
 
@@ -281,6 +288,10 @@ public class FragmentCheckoutBindingImpl extends FragmentCheckoutBinding  {
                         // read viewModel.total.getValue()
                         viewModelTotalGetValue = viewModelTotal.getValue();
                     }
+
+
+                    // read @android:string/total
+                    totalAndroidStringTotalViewModelTotal = total.getResources().getString(R.string.total, viewModelTotalGetValue);
             }
             if ((dirtyFlags & 0x190L) != 0) {
 
@@ -317,6 +328,10 @@ public class FragmentCheckoutBindingImpl extends FragmentCheckoutBinding  {
                         // read viewModel.tax.getValue()
                         viewModelTaxGetValue = viewModelTax.getValue();
                     }
+
+
+                    // read @android:string/tax
+                    taxAndroidStringTaxViewModelTax = tax.getResources().getString(R.string.tax, viewModelTaxGetValue);
             }
         }
         // batch finished
@@ -341,17 +356,17 @@ public class FragmentCheckoutBindingImpl extends FragmentCheckoutBinding  {
         if ((dirtyFlags & 0x182L) != 0) {
             // api target 1
 
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.subtotal, viewModelSubtotalGetValue);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.subtotal, subtotalAndroidStringSubtotalViewModelSubtotal);
         }
         if ((dirtyFlags & 0x1a0L) != 0) {
             // api target 1
 
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.tax, viewModelTaxGetValue);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.tax, taxAndroidStringTaxViewModelTax);
         }
         if ((dirtyFlags & 0x188L) != 0) {
             // api target 1
 
-            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.total, viewModelTotalGetValue);
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.total, totalAndroidStringTotalViewModelTotal);
         }
     }
     // Listener Stub Implementations

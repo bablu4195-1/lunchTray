@@ -80,7 +80,7 @@ class OrderViewModel : ViewModel() {
         // TODO: set the current entree value to the menu item corresponding to the passed in string
         // TODO: update the subtotal to reflect the price of the selected entree.
         _entree.value = menuItems[entree]
-        _subtotal.value = _subtotal.value!! + _entree.value!!.price
+        updateSubtotal(_entree.value!!.price)
     }
     /**
      * Set the side for the order.
@@ -98,7 +98,7 @@ class OrderViewModel : ViewModel() {
         // TODO: set the current side value to the menu item corresponding to the passed in string
         // TODO: update the subtotal to reflect the price of the selected side.
         _side.value = menuItems[side]
-        _subtotal.value = _subtotal.value!! + _side.value!!.price
+        updateSubtotal(_side.value!!.price)
     }
 
     /**
@@ -120,7 +120,7 @@ class OrderViewModel : ViewModel() {
         //  string
         // TODO: update the subtotal to reflect the price of the selected accompaniment.
         _accompaniment.value = menuItems[accompaniment]
-        _subtotal.value = _subtotal.value!! + _accompaniment.value!!.price
+        updateSubtotal(_accompaniment.value!!.price)
     }
 
     /**

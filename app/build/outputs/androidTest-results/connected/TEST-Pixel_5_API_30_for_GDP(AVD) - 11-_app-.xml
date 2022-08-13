@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.lunchtray.OrderFunctionalityTests" tests="10" failures="2" errors="0" skipped="0" time="46.198" timestamp="2022-08-13T10:32:41" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_5_API_30_for_GDP(AVD) - 11" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="radio_buttons_update_side_menu_subtotal" classname="com.example.lunchtray.OrderFunctionalityTests" time="3.965" />
+  <testcase name="order_reset_after_cancel_from_accompaniment_menu" classname="com.example.lunchtray.OrderFunctionalityTests" time="3.438" />
+  <testcase name="subtotal_updates_in_full_order_flow" classname="com.example.lunchtray.OrderFunctionalityTests" time="3.218">
+    <failure>androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: 'an instance of android.widget.TextView and view.getText() with or without transformation to match: a string containing "Subtotal: $10.00"' doesn't match the selected view.
+Expected: an instance of android.widget.TextView and view.getText() with or without transformation to match: a string containing "Subtotal: $10.00"
+Got: view.getText() was "$10.00" transformed text was "$10.00"
+View Details: MaterialTextView{id=2131231217, res-name=subtotal, visibility=VISIBLE, width=156, height=67, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams&#64;7730e18, tag=null, root-is-layout-requested=false, has-input-connection=false, x=880.0, y=382.0, text=$10.00, input-type=0, ime-target=false, has-links=false}
+
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1736)
+at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)
+at com.example.lunchtray.OrderFunctionalityTests.subtotal_updates_in_full_order_flow(OrderFunctionalityTests.kt:160)
+... 27 trimmed
+Caused by: junit.framework.AssertionFailedError: 'an instance of android.widget.TextView and view.getText() with or without transformation to match: a string containing "Subtotal: $10.00"' doesn't match the selected view.
+Expected: an instance of android.widget.TextView and view.getText() with or without transformation to match: a string containing "Subtotal: $10.00"
+Got: view.getText() was "$10.00" transformed text was "$10.00"
+View Details: MaterialTextView{id=2131231217, res-name=subtotal, visibility=VISIBLE, width=156, height=67, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams&#64;7730e18, tag=null, root-is-layout-requested=false, has-input-connection=false, x=880.0, y=382.0, text=$10.00, input-type=0, ime-target=false, has-links=false}
+
+at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:16)
+at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:11)
+at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:12)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at android.os.Handler.handleCallback(Handler.java:938)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:223)
+at android.app.ActivityThread.main(ActivityThread.java:7656)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)</failure>
+  </testcase>
+  <testcase name="order_snackbar" classname="com.example.lunchtray.OrderFunctionalityTests" time="3.585" />
+  <testcase name="order_reset_after_cancel_from_entree_menu" classname="com.example.lunchtray.OrderFunctionalityTests" time="2.38" />
+  <testcase name="subtotal_tax_total_in_checkout" classname="com.example.lunchtray.OrderFunctionalityTests" time="4.451">
+    <failure>androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: 'an instance of android.widget.TextView and view.getText() with or without transformation to match: a string containing "Subtotal: $10.00"' doesn't match the selected view.
+Expected: an instance of android.widget.TextView and view.getText() with or without transformation to match: a string containing "Subtotal: $10.00"
+Got: view.getText() was "$10.00" transformed text was "$10.00"
+View Details: MaterialTextView{id=2131231217, res-name=subtotal, visibility=VISIBLE, width=156, height=67, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams&#64;71f71d4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=880.0, y=382.0, text=$10.00, input-type=0, ime-target=false, has-links=false}
+
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1736)
+at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)
+at com.example.lunchtray.OrderFunctionalityTests.subtotal_tax_total_in_checkout(OrderFunctionalityTests.kt:173)
+... 27 trimmed
+Caused by: junit.framework.AssertionFailedError: 'an instance of android.widget.TextView and view.getText() with or without transformation to match: a string containing "Subtotal: $10.00"' doesn't match the selected view.
+Expected: an instance of android.widget.TextView and view.getText() with or without transformation to match: a string containing "Subtotal: $10.00"
+Got: view.getText() was "$10.00" transformed text was "$10.00"
+View Details: MaterialTextView{id=2131231217, res-name=subtotal, visibility=VISIBLE, width=156, height=67, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams&#64;71f71d4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=880.0, y=382.0, text=$10.00, input-type=0, ime-target=false, has-links=false}
+
+at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:16)
+at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:11)
+at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:12)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at android.os.Handler.handleCallback(Handler.java:938)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:223)
+at android.app.ActivityThread.main(ActivityThread.java:7656)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)</failure>
+  </testcase>
+  <testcase name="radio_buttons_update_accompaniment_menu_subtotal" classname="com.example.lunchtray.OrderFunctionalityTests" time="4.7" />
+  <testcase name="order_reset_after_cancel_from_side_menu" classname="com.example.lunchtray.OrderFunctionalityTests" time="3.388" />
+  <testcase name="radio_buttons_update_entree_menu_subtotal" classname="com.example.lunchtray.OrderFunctionalityTests" time="1.647" />
+  <testcase name="order_reset_after_cancel_from_checkout" classname="com.example.lunchtray.OrderFunctionalityTests" time="3.67" />
+</testsuite>
